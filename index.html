@@ -17,7 +17,105 @@
         /* Profile Image Frame Linking the Graduation Portrait */
         .profile-pic { width: 140px; height: 140px; border-radius: 50%; border: 4px solid #ecc94b; object-fit: cover; margin-right: 35px; background: #e2e8f0; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
         .header-text h1 { font-size: 32px; font-weight: 700; letter-spacing: 1px; color: #ffffff; text-transform: uppercase; margin-bottom: 6px; text-shadow: 1px 1px 3px rgba(0,0,0,0.3); }
-        .header-text h2 { font-size: 14px; color: #ecc94b; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; }
+        .header-text h2 { font-size: 14px; color: #ecc94b; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; }<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<!-- MOBILE + RESPONSIVE -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- SEO BASIC -->
+<meta name="description" content="Graduation circular profile photo">
+<meta name="keywords" content="graduation, profile, circular image, portfolio">
+<meta name="author" content="Your Name">
+
+<title>Circular Graduation Profile</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f3f4f6;
+    font-family:Arial, sans-serif;
+}
+
+/* CIRCULAR PROFILE */
+.profile-circle{
+    width:360px;
+    height:360px;
+    border-radius:50%;
+    overflow:hidden;
+    position:relative;
+
+    border:8px solid #ffffff;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.25),
+    0 5px 12px rgba(0,0,0,0.15);
+
+    background:#ffffff;
+}
+
+/* IMAGE */
+.profile-circle img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center top;
+    display:block;
+}
+
+/* DARK OVERLAY */
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+
+    background:
+    linear-gradient(
+        to top,
+        rgba(0,0,0,0.25),
+        rgba(0,0,0,0.02),
+        transparent
+    );
+}
+
+/* RESPONSIVE (MOBILE SUPPORT) */
+@media (max-width: 480px){
+    .profile-circle{
+        width:260px;
+        height:260px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="profile-circle">
+
+    <!-- RECOMMENDED: USE SIMPLE FILE NAME -->
+    <img src="grad.png" alt="Graduation Photo">
+
+    <div class="overlay"></div>
+
+</div>
+
+</body>
+</html>
         
         /* Advanced Structure Layout Grid */
         .main-content { display: grid; grid-template-columns: 32% 68%; min-height: 1000px; }
